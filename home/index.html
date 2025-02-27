@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quizlet/Home</title>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <header class="header">
+        <a href="#" class="logo">Quizlet</a>
+        <nav class="navbar">
+            <a href="#" class="nav-link">Home</a>
+            <a href="#" class="nav-link">Quiz</a>
+            <a href="#" class="nav-link">Leaderboard</a>
+            <a href="#" class="nav-link">About Us</a>
+            <a href="#" class="nav-link">Contact</a>
+        </nav>
+    </header>
+
+    <!-- About Us Section -->
+    <section id="page5">
+        <h1>About Us</h1>
+        <div id="page5-hero">
+            <div class="arrow" id="arrow-left">
+                <img src="images/arrow.jpg" alt="arrow left" />
+            </div>
+            <div id="image-slider">
+                <div id="frame">
+                    <div class="image-container">
+                        <img src="images/image1.jpeg" alt="gym" />
+                    </div>
+                    <div class="image-container">
+                        <img src="images/image2.jpg" alt="gym" />
+                    </div>
+                    <div class="image-container">
+                        <img src="images/image3.jpeg" alt="gym" />
+                    </div>
+                    <div class="image-container">
+                        <img src="images/image1.jpg" alt="gym" />
+                    </div>
+                </div>
+            </div>
+            <div class="arrow" id="arrow-right">
+                <img src="images/arrow.jpg" alt="arrow right" />
+            </div>
+        </div>
+        <div class="icons">
+            <a href="#" class="fb"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="insta"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="yt"><i class="fab fa-youtube"></i></a>
+        </div>
+    </section>
+
+    <!-- Quiz Cards Section -->
+    <section id="page2">
+        <div id="card-container">
+            <div class="card">
+                <div class="services front">
+                    <div class="service-image">
+                        <img src="images/image1.jpeg" alt="yoga" />
+                    </div>
+                    <h3>Quiz Night</h3>
+                    <p>Do you have what it takes to be the ultimate quiz champion? Gather your friends and join us for an unforgettable Quiz Night!</p>
+                    <button onclick="flipCard()">See More</button>
+                </div>
+                <div class="services back">
+                    <h3>Some Important Facts</h3>
+                    <ul>
+                        <li>Lorem ipsum dolor sit amet.</li>
+                        <li>Suscipit accusamus ut nulla sapiente.</li>
+                        <li>Nesciunt autem facilis architecto dolorem.</li>
+                        <li>Labore reprehenderit id unde ducimus.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card">
+                <div class="services front">
+                    <div class="service-image">
+                        <img src="images/image1.jpeg" alt="muscle" />
+                    </div>
+                    <h3>Quiz Show</h3>
+                    <p>Get ready and bring your A-game! Join us for brain-teasing questions and fun trivia games.</p>
+                    <button>See More</button>
+                </div>
+                <div class="services back">
+                    <h3>Some Important Facts</h3>
+                    <ul>
+                        <li>Lorem ipsum dolor sit amet.</li>
+                        <li>Suscipit accusamus ut nulla sapiente.</li>
+                        <li>Nesciunt autem facilis architecto dolorem.</li>
+                        <li>Labore reprehenderit id unde ducimus.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card">
+                <div class="services front">
+                    <div class="service-image">
+                        <img src="images/image1.jpeg" alt="rehabilitation" />
+                    </div>
+                    <h3>Quiz Trivia</h3>
+                    <p>Do you have what it takes to be the ultimate quiz champion? Test your knowledge and engage in a fun, friendly competition.</p>
+                    <button>See More</button>
+                </div>
+                <div class="services back">
+                    <h3>Some Important Facts</h3>
+                    <ul>
+                        <li>Lorem ipsum dolor sit amet.</li>
+                        <li>Suscipit accusamus ut nulla sapiente.</li>
+                        <li>Nesciunt autem facilis architecto dolorem.</li>
+                        <li>Labore reprehenderit id unde ducimus.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials">
+        <h2>What Our Users Say</h2>
+        <div id="testimonialCarousel" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <blockquote>"Quizlet has transformed the way I study. The quizzes are fun and challenging!"</blockquote>
+                    <footer>- Siya, Student</footer>
+                </div>
+                <div class="carousel-item">
+                    <blockquote>"An amazing platform for educators to create interactive learning experiences."</blockquote>
+                    <footer>- Suraj, Teacher</footer>
+                </div>
+                <div class="carousel-item">
+                    <blockquote>"Highly recommend Quizlet for anyone looking to improve their knowledge."</blockquote>
+                    <footer>- Emma, Lifelong Learner</footer>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#testimonialCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#testimonialCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features">
+        <h2>Why Choose Quizlet?</h2>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <i class="fa fa-graduation-cap"></i>
+                    <h4>Educational</h4>
+                    <p>Improve your knowledge with quizzes designed by experts.</p>
+                </div>
+                <div class="col-md-4">
+                    <i class="fa fa-users"></i>
+                    <h4>Interactive</h4>
+                    <p>Engage with other learners and compete on the leaderboard.</p>
+                </div>
+                <div class="col-md-4">
+                    <i class="fa fa-mobile"></i>
+                    <h4>Accessible</h4>
+                    <p>Access quizzes on any device, anytime, anywhere.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog">
+        <h2>Latest News & Blogs</h2>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card1">
+                        <img src="images/image1.jpeg" alt="Blog Image">
+                        <h5>How to Prepare for Competitive Exams</h5>
+                        <p>Learn tips and tricks to ace your exams with our expert guides.</p>
+                        <a href="#" class="btn">Read More</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card1">
+                        <img src="images/image1.jpeg" alt="Blog Image">
+                        <h5>Top 10 Benefits of Quizzing</h5>
+                        <p>Discover how quizzing can enhance learning and retention.</p>
+                        <a href="#" class="btn">Read More</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card1">
+                        <img src="images/image1.jpeg" alt="Blog Image">
+                        <h5>Quiz-World Updates: New Facts</h5>
+                        <p>Check out the latest info about the quiz world.</p>
+                        <a href="#" class="btn">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-box">
+        <div class="footer-left">
+            <h3>Quizlet <span>Developers</span></h3>
+            <p class="footer-links">
+                <a href="#">Home</a> |
+                <a href="#">Quiz</a> |
+                <a href="#">Contact</a> |
+                <a href="#">Login/Signup</a>
+            </p>
+            <p class="footer-company-name">Copyright © 2024 Quizlet Developers. All rights reserved.</p>
+        </div>
+        <div class="footer-center">
+            <div>
+                <i class="fa fa-map-marker"></i>
+                <p>Chitkara University, Punjab</p>
+            </div>
+            <div>
+                <i class="fa fa-phone"></i>
+                <p>+91 123456789</p>
+            </div>
+            <div>
+                <i class="fa fa-envelope"></i>
+                <p><a href="mailto:abc@gmail.com">abc@gmail.com</a></p>
+            </div>
+        </div>
+        <div class="footer-right">
+            <p class="footer-company-about">
+                <span>About the Company:</span>
+                Welcome to Quizlet, your go-to platform for interactive learning and self-assessment!
+            </p>
+            <div class="footer-icons">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+                <a href="#"><i class="fa fa-linkedin"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-youtube"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
