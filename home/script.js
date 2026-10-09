@@ -10,7 +10,6 @@ let typearea = document.querySelector("textarea");
 let sub = document.querySelector("#sub-button");
 let popup = document.querySelector(".popup-message");
 let num = imagewidth.length;
-let inputvalue;
 let currentposition = 1;
 let x = 100 / num;
 let indexcount = x;
@@ -71,13 +70,14 @@ cards.forEach((card) => {
 
 // page 4 form interactions
 input.forEach((field) => {
+    const originalPlaceholder = field.placeholder;
+
     field.addEventListener("mouseenter", () => {
-        inputvalue = field.placeholder;
         field.placeholder = "";
     });
 
     field.addEventListener("mouseleave", () => {
-        field.placeholder = inputvalue;
+        field.placeholder = originalPlaceholder;
     });
 });
 
