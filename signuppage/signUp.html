@@ -15,7 +15,7 @@
                     <p>It's good to have you back</p>
                 </div>
                 <div class="boxArea" id="LoginArea">
-                    <form id="loginForm">
+                    <form id="loginForm" autocomplete="on">
                         <div class="boxItems">
                             <img src="images/5.png" alt="Logo" class="logo">
                         </div>
@@ -23,15 +23,15 @@
                             <p class="welcomeText">Welcome User</p>
                         </div>
                         <div class="boxItems inputs">
-                            <label for="username">Username</label>       
-                            <input type="text" id="username" required>
+                            <label for="username">Username</label>
+                            <input type="text" id="username" name="username" autocomplete="username" required>
                         </div>
                         <div class="boxItems inputs">
-                            <label for="pword">Password</label>  
-                            <input type="password" id="pword" required>
+                            <label for="pword">Password</label>
+                            <input type="password" id="pword" name="password" autocomplete="current-password" required>
                         </div>
-                        <div class="boxItems">                            
-                            <input type="submit" value="SIGN IN" id="submitButton">      
+                        <div class="boxItems">
+                            <input type="submit" value="SIGN IN" id="submitButton">
                         </div>
                         <div class="boxItems" id="log-on">
                             <p>New to Fortunez? <a href="./signup.html">Create Account</a></p>
