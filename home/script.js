@@ -135,5 +135,36 @@ if (moveforward && movebackward && framewidth && num > 0) {
         }
     }
 
-    let timer = setInterval(increment, 3000);
+    const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    let timer = null;
+
+    function pauseSlider() {
+        if (timer !== null) {
+            clearInterval(timer);
+            timer = null;
+        }
+    }
+
+    function resumeSlider() {
+        if (!prefersReducedMotion && timer === null && !document.hidden) {
+            timer = setInterval(increment, 3000);
+        }
+    }
+
+    resumeSlider();
+
+    [moveforward, movebackward].forEach((control) => {
+        control.addEventListener("mouseenter", pauseSlider);
+        control.addEventListener("mouseleave", resumeSlider);
+        control.addEventListener("focusin", pauseSlider);
+        control.addEventListener("focusout", resumeSlider);
+    });
+
+    document.addEventListener("visibilitychange", () => {
+        if (document.hidden) {
+            pauseSlider();
+        } else {
+            resumeSlider();
+        }
+    });
 }
