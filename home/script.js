@@ -72,11 +72,11 @@ cards.forEach((card) => {
 input.forEach((field) => {
     const originalPlaceholder = field.placeholder;
 
-    field.addEventListener("mouseenter", () => {
+    field.addEventListener("focus", () => {
         field.placeholder = "";
     });
 
-    field.addEventListener("mouseleave", () => {
+    field.addEventListener("blur", () => {
         field.placeholder = originalPlaceholder;
     });
 });
