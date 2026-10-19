@@ -5,7 +5,7 @@ let movebackward = document.getElementById("arrow-right");
 let circle = document.getElementById("circle");
 let page2 = document.getElementById("page2-main");
 let cards = document.querySelectorAll(".card");
-let input = document.querySelectorAll("input");
+let input = document.querySelectorAll("input:not([type=\"submit\"])");
 let typearea = document.querySelector("textarea");
 let sub = document.querySelector("#sub-button");
 let popup = document.querySelector(".popup-message");
